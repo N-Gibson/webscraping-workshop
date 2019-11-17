@@ -8,7 +8,7 @@ nightmare
   .wait('.result')
   .evaluate(() => {
     let jobTitles = document.querySelector('.title')
-    var list = [].slice.call(jobTitles); // Why did I have to do this?
+    let list = [].slice.call(jobTitles)
     return list.map((node) => {
       return node.innerText
     })

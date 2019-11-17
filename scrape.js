@@ -7,7 +7,7 @@ nightmare
   .click('.icl-WhatWhere-button')
   .wait('.result')
   .evaluate(() => {
-    let jobTitles = document.querySelector('.title')
+    let jobTitles = document.querySelector('.jobTitle')
     let list = [].slice.call(jobTitles)
     return list.map((node) => {
       return node.innerText
